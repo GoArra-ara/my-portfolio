@@ -1,0 +1,258 @@
+/* Reset and General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin-top: 56px; /* Offset for fixed navbar */
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Ensure no default background image */
+}
+
+/* Home Section */
+#home {
+    height: 100vh;
+    background: linear-gradient(to right, #ffffff, #dcdbdb);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+#home .container {
+    max-width: 600px;
+}
+
+.highlight {
+    color: #6553eb;
+}
+
+/* Social Icons */
+.social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.social-icons a:hover {
+    color: #6c63ff;
+}
+
+/* Profile Image */
+.profile-img img {
+    max-width: 600px;
+    height: auto;
+}
+
+/* styles.css */
+
+.skills-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 150px; /* Set the width for the skill rectangle */
+    height: 150px; /* Set the height for the skill rectangle */
+    margin: 10px; /* Adjust spacing between skill rectangles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Set a background color for the skill rectangle */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.skill img {
+    max-width: 80px; /* Adjust the max width of the image */
+    max-height: 80px; /* Adjust the max height of the image */
+    object-fit: contain; /* Ensure the image fits within the rectangle */
+}
+
+
+/* Buttons */
+.btn-primary {
+    background-color: #6c63ff;
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary:hover {
+    background-color: #5a54d4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    #home {
+        padding: 0 20px;
+    }
+    
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+.card-text {
+    text-align: justify;
+}
+/* From Uiverse.io by vamsidevendrakumar */
+.card {
+    width: 200px; /* Adjusted size for skill cards */
+    height: 200px;
+    perspective: 1000px;
+    margin: 10px; /* Space between cards */
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background-color: #414040;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+    border-radius: 10px;
+    border: 10px solid #a23e3e;
+  }
+  
+  .card-back {
+    background-color: #414040;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; /* Adjusted size for smaller text */
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    border: 10px solid #414040;
+  }
+  
+  .skills-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card img {
+    width: 60px; /* Adjusted size to match all logos */
+    height: 60px; /* Adjusted size to match all logos */
+    object-fit: contain;
+  }
+  
+/* Project Section Container */
+#projects {
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Flexbox Layout for Project Cards */
+#projects .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Project Card */
+#projects .card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    min-height: 590px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+#projects .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Title Styling */
+#projects .card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #333;
+}
+
+/* Card Image Styling */
+#projects .card img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Card Text Styling */
+#projects .card-text {
+    padding: 0 15px 15px;
+    text-align: justify;
+    line-height: 1.6;
+    color: #444;
+    font-size: 1rem;
+}
+
+/* Background Colors for Cards */
+#projects .card.red {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#projects .card.blue {
+    background-color: #3498db;
+    color: #fff;
+}
+
+#projects .card.green {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    #projects .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
