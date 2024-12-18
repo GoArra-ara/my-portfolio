@@ -8,7 +8,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
-    margin-top: 56px; /* Offset for fixed navbar */
+    margin-top: 56px; /*navbar */
 }
 
 /* Navbar Styles */
@@ -18,7 +18,7 @@ body {
 }
 
 .navbar-toggler-icon {
-    background-image: none; /* Ensure no default background image */
+    background-image: none; 
 }
 
 /* Home Section */
@@ -44,7 +44,7 @@ body {
     margin: 0 10px;
     font-size: 1.5rem;
     color: #333;
-    transition: color 0.3s ease; /* Smooth transition */
+    transition: color 0.3s ease; 
 }
 
 .social-icons a:hover {
@@ -66,21 +66,21 @@ body {
 }
 
 .skill {
-    width: 150px; /* Set the width for the skill rectangle */
-    height: 150px; /* Set the height for the skill rectangle */
-    margin: 10px; /* Adjust spacing between skill rectangles */
+    width: 150px; 
+    height: 150px; 
+    margin: 10px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white; /* Set a background color for the skill rectangle */
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .skill img {
-    max-width: 80px; /* Adjust the max width of the image */
-    max-height: 80px; /* Adjust the max height of the image */
-    object-fit: contain; /* Ensure the image fits within the rectangle */
+    max-width: 80px; 
+    max-height: 80px; 
+    object-fit: contain; 
 }
 
 
@@ -88,7 +88,7 @@ body {
 .btn-primary {
     background-color: #6c63ff;
     border: none;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease; 
 }
 
 .btn-primary:hover {
@@ -112,10 +112,10 @@ body {
 }
 /* From Uiverse.io by vamsidevendrakumar */
 .card {
-    width: 200px; /* Adjusted size for skill cards */
+    width: 200px; 
     height: 200px;
     perspective: 1000px;
-    margin: 10px; /* Space between cards */
+    margin: 10px; 
   }
   
   .card-inner {
@@ -139,7 +139,7 @@ body {
   }
   
   .card-front {
-    background-color: #414040;
+    background-color: #cccccc;
     color: #fff;
     display: flex;
     align-items: center;
@@ -147,7 +147,7 @@ body {
     font-size: 24px;
     transform: rotateY(0deg);
     border-radius: 10px;
-    border: 10px solid #a23e3e;
+    border: 5px solid #2c2a2a;
   }
   
   .card-back {
@@ -156,7 +156,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px; /* Adjusted size for smaller text */
+    font-size: 16px; 
     transform: rotateY(180deg);
     border-radius: 10px;
     border: 10px solid #414040;
@@ -169,8 +169,8 @@ body {
   }
   
   .card img {
-    width: 60px; /* Adjusted size to match all logos */
-    height: 60px; /* Adjusted size to match all logos */
+    width: 60px; 
+    height: 60px; 
     object-fit: contain;
   }
   
@@ -235,17 +235,17 @@ body {
 
 /* Background Colors for Cards */
 #projects .card.red {
-    background-color: #e74c3c;
+    background-color: #dfdfdf;
     color: #fff;
 }
 
 #projects .card.blue {
-    background-color: #3498db;
+    background-color: #dfdfdf;
     color: #fff;
 }
 
 #projects .card.green {
-    background-color: #2ecc71;
+    background-color: #dfdfdf;
     color: #fff;
 }
 
